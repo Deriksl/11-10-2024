@@ -83,6 +83,7 @@ Widget password(){
         fillColor: Colors.white,
         filled: true,
       ),
+      onChanged: (value),
     ),
   );
 }
@@ -96,4 +97,16 @@ Widget boton(){
       onPressed: (){},
       child: Text("Entrar", style: TextStyle(fontSize: 25, color: Colors.white),)
   );
+
+  onPressed: () {
+    try {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          bulider: (context) => Tarea(usuario: usuarioText),
+        ),
+      )
+    }
+  }
 }
+

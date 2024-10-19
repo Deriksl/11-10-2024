@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
 // Función principal que inicia la ejecución de la aplicación.
-void main() {
-  runApp(MyApp());
+
+
+class Productos extends StatelessWidget{
+  final String usuario;
+
+  Productos ({required this.usuario});
+
+
+  @override
+  Widget build (BuildContext context) {
+    return TiendaScreen();
+  }
 }
 
 // Clase principal de la aplicación que extiende StatelessWidget,
-class MyApp extends StatelessWidget {
+class TiendaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
